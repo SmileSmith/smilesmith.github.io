@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>批量修改Git提交记录中的用户和密码 | 前路漫漫</title>
+    <meta name="description" content="前路漫漫 当克己 当慎独">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.6dd12250.css" as="style"><link rel="preload" href="/assets/js/app.0623bd66.js" as="script"><link rel="preload" href="/assets/js/2.5dd5749f.js" as="script"><link rel="preload" href="/assets/js/23.2bdf04ee.js" as="script"><link rel="prefetch" href="/assets/js/10.fc6c68bf.js"><link rel="prefetch" href="/assets/js/11.ba650025.js"><link rel="prefetch" href="/assets/js/12.c6bd3826.js"><link rel="prefetch" href="/assets/js/13.65bc4a49.js"><link rel="prefetch" href="/assets/js/14.91612579.js"><link rel="prefetch" href="/assets/js/15.d9728f90.js"><link rel="prefetch" href="/assets/js/16.0cdff337.js"><link rel="prefetch" href="/assets/js/17.9b49432d.js"><link rel="prefetch" href="/assets/js/18.c6c32b37.js"><link rel="prefetch" href="/assets/js/19.d06222f2.js"><link rel="prefetch" href="/assets/js/20.8888a134.js"><link rel="prefetch" href="/assets/js/21.e7f0e2c3.js"><link rel="prefetch" href="/assets/js/22.1e32b4b7.js"><link rel="prefetch" href="/assets/js/24.2c3bbe4d.js"><link rel="prefetch" href="/assets/js/25.d1292960.js"><link rel="prefetch" href="/assets/js/26.6cabc15b.js"><link rel="prefetch" href="/assets/js/27.0d0f2ae0.js"><link rel="prefetch" href="/assets/js/28.d8f98424.js"><link rel="prefetch" href="/assets/js/3.1a1f1fe3.js"><link rel="prefetch" href="/assets/js/4.7d273734.js"><link rel="prefetch" href="/assets/js/5.e11c7487.js"><link rel="prefetch" href="/assets/js/6.3195bf77.js"><link rel="prefetch" href="/assets/js/7.c30685e8.js"><link rel="prefetch" href="/assets/js/8.8adcad81.js"><link rel="prefetch" href="/assets/js/9.f7bc9cde.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6dd12250.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/images/logo.png" alt="前路漫漫" class="logo"> <span class="site-name can-hide">前路漫漫</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">所有博客</a></div><div class="nav-item"><a href="http://gofrontend.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人网站
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/SmileSmith/Blogs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">所有博客</a></div><div class="nav-item"><a href="http://gofrontend.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人网站
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/SmileSmith/Blogs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>批量修改Git提交记录中的用户和密码</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/201902/BatchChangeUserInfoInGitLog.html#背景" class="sidebar-link">背景</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/201902/BatchChangeUserInfoInGitLog.html#解决办法" class="sidebar-link">解决办法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/201902/BatchChangeUserInfoInGitLog.html#_1-修改当前目录下git的用户名和邮箱" class="sidebar-link">1. 修改当前目录下Git的用户名和邮箱</a></li><li class="sidebar-sub-header"><a href="/201902/BatchChangeUserInfoInGitLog.html#_2-修改当前目录下git的用户名和邮箱" class="sidebar-link">2. 修改当前目录下Git的用户名和邮箱</a></li><li class="sidebar-sub-header"><a href="/201902/BatchChangeUserInfoInGitLog.html#_3-将修改强制push到远程" class="sidebar-link">3. 将修改强制Push到远程</a></li></ul></li><li><a href="/201902/BatchChangeUserInfoInGitLog.html#验证" class="sidebar-link">验证</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="批量修改git提交记录中的用户和密码"><a href="#批量修改git提交记录中的用户和密码" class="header-anchor">#</a> 批量修改Git提交记录中的用户和密码</h1> <h2 id="背景"><a href="#背景" class="header-anchor">#</a> 背景</h2> <p>因为经常在家办公，修改密码的时候不小心把Git中的用户名和邮箱都改成了公司的用户名和邮箱（如下）。导致在提交Github时，使用了公司的信息，造成不良影响。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token comment">// 1. 当公司密码修改后，Git提示Auth失败，这时候经常用下面的方式重置Git缓存的密码</span>
+
+git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>name <span class="token string">''</span>
+
+<span class="token comment">// 2. 然后重新输入用户名和密码</span>
+
+</code></pre></div><h2 id="解决办法"><a href="#解决办法" class="header-anchor">#</a> 解决办法</h2> <p>解决的方法分为3步：</p> <ol><li>修改项目根目录下Git的用户名和邮箱</li> <li>编写执行脚本批量替换Git的用户名和邮箱</li> <li>强制Push</li></ol> <h3 id="_1-修改当前目录下git的用户名和邮箱"><a href="#_1-修改当前目录下git的用户名和邮箱" class="header-anchor">#</a> 1. 修改当前目录下Git的用户名和邮箱</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> config user.name <span class="token string">'SmileSmith'</span>
+<span class="token function">git</span> config user.email <span class="token string">'longde_chen@163.com'</span>
+</code></pre></div><h3 id="_2-修改当前目录下git的用户名和邮箱"><a href="#_2-修改当前目录下git的用户名和邮箱" class="header-anchor">#</a> 2. 修改当前目录下Git的用户名和邮箱</h3> <p>编写如下shell脚本，放到项目根目录下：</p> <ul><li>OLD_EMAIL:错误的邮箱</li> <li>CORRECT_NAME:正确的作者名</li> <li>CORRECT_EMAIL:正确的邮箱</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>
+<span class="token comment">#!/bin/sh</span>
+
+<span class="token function">git</span> filter-branch --env-filter <span class="token string">'
+
+OLD_EMAIL=&quot;error@error.com&quot;
+CORRECT_NAME=&quot;SmileSmith&quot;
+CORRECT_EMAIL=&quot;longde_chen@163.com&quot;
+
+if [ &quot;<span class="token variable">$GIT_COMMITTER_EMAIL</span>&quot; = &quot;<span class="token variable">$OLD_EMAIL</span>&quot; ]
+then
+export GIT_COMMITTER_NAME=&quot;<span class="token variable">$CORRECT_NAME</span>&quot;
+export GIT_COMMITTER_EMAIL=&quot;<span class="token variable">$CORRECT_EMAIL</span>&quot;
+fi
+if [ &quot;<span class="token variable">$GIT_AUTHOR_EMAIL</span>&quot; = &quot;<span class="token variable">$OLD_EMAIL</span>&quot; ]
+then
+export GIT_AUTHOR_NAME=&quot;<span class="token variable">$CORRECT_NAME</span>&quot;
+export GIT_AUTHOR_EMAIL=&quot;<span class="token variable">$CORRECT_EMAIL</span>&quot;
+fi
+'</span> --tag-name-filter <span class="token function">cat</span> -- --branches --tags
+
+</code></pre></div><p>命名为fix.sh放到根目录，执行shell脚本。</p> <ul><li>如果提示<code>permission deny</code>等没权限，在shell下添加文件权限：</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">chmod</span> <span class="token number">777</span> fix.sh
+</code></pre></div><ul><li>如果提示shell脚本执行失败，执行如下：</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> filter-branch -f --index-filter <span class="token string">'git rm --cached --ignore-unmatch Rakefile'</span> HEAD
+</code></pre></div><h3 id="_3-将修改强制push到远程"><a href="#_3-将修改强制push到远程" class="header-anchor">#</a> 3. 将修改强制Push到远程</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> push origin --force --all
+</code></pre></div><h2 id="验证"><a href="#验证" class="header-anchor">#</a> 验证</h2> <p>在项目根目录下执行</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> log
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/SmileSmith/Blogs/edit/master/docs/201902/BatchChangeUserInfoInGitLog.md" target="_blank" rel="noopener noreferrer">帮助改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">12/29/2019, 11:32:53 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.0623bd66.js" defer></script><script src="/assets/js/2.5dd5749f.js" defer></script><script src="/assets/js/23.2bdf04ee.js" defer></script>
+  </body>
+</html>
